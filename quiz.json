@@ -1,0 +1,25 @@
+{
+    "Beginner": [
+        {
+            "Quiz": "execute\uc5d0 \uc0ac\uc6a9\ub418\ub294 \uc778\uc790\uac00 \uc544\ub2cc\uac83\uc740?\n1.anchored  2.align  3.blocks  4.modify  5.success",
+            "Answer": "4"
+        },
+        {
+            "Quiz": "target selector\uc758 sort\uc758 \uae30\ub2a5\uc911 \uc62c\ubc14\ub974\uc9c0 \uc54a\ub294\uac83\uc740?\n1.\uac00\uae4c\uc6b4 \uc21c\uc73c\ub85c \uc815\ub82c 2.\uba40\ub9ac\uc788\ub294 \uc21c\uc73c\ub85c \uc815\ub82c 3.UUID\uc5d0 \ub530\ub77c \uc815\ub82c 4.\uc18c\ud658\ub41c \uc21c\uc73c\ub85c \uc815\ub82c 5.\ubb34\uc791\uc704\ub85c \uc815\ub82c",
+            "Answer": "3"
+        },
+        {
+            "Quiz": "\uc88c\uc6b0 \uc2dc\uc544\uac12\uc774 30\uc5d0\uc11c 40\uc0ac\uc774\uc778 \ud50c\ub808\uc774\uc5b4\ub97c \uac10\uc9c0\ud558\ub294 selector\ub85c \uc633\ubc14\ub978 \uac83\uc740?\n1.@a[xrotation=30..40] 2.@a[x_rotation=30..40] 3.@a[x_rotation=30.0001..39.9999]  4.@a[yrotation=30..40] 5.@a[y_rotation=30..40]",
+            "Answer": "5"
+        }
+    ],
+    "Master": [],
+    "GrandMaster": [],
+    "Challenger": [],
+    "Ban": [
+        {
+            "ID": 366119093213986817,
+            "Time": 1614093671.4314954
+        }
+    ]
+}
