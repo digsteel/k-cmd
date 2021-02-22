@@ -678,5 +678,6 @@ class MyClient(discord.Client):
                 await channel.send("**언급을 한명만 해주세요.**")
 
 
+access_token = os.environ["BOT_TOKEN"]       
 client = MyClient()
-client.run('ODEzNDQ1NDc3NDI4NzU2NTUx.YDPaIg.3JCjZ87RVIPF8nhFNpADr0dVXAU')
+client.run(access_token)
