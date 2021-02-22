@@ -1,6 +1,7 @@
 import asyncio
 
 import discord
+import os
 import random
 import json
 import time
@@ -678,6 +679,6 @@ class MyClient(discord.Client):
 
 
 
-
+access_token = os.environ["BOT_TOKEN"]
 client = MyClient()
-client.run('ODEzNDAyNzI1NzIyMjI2NzU4.YDOyUg.E61v37Ncn0Va-dt53uEJJ1PXMLs')
+client.run(access_token)
