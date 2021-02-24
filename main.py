@@ -1,7 +1,7 @@
 import asyncio
 
-import discord
 import os
+import discord
 import random
 import json
 import time
@@ -32,12 +32,12 @@ class MyClient(discord.Client):
                 for role in message.author.roles:
                     if role.name == "고수":
                         if testMember.count(message.author.id) == 0:
-                            testMember.append(message.author.id)
                             if len(data['Challenger']) >= 3:
+                                testMember.append(message.author.id)
                                 overwrites = {
                                     channel.guild.default_role: discord.PermissionOverwrite(read_messages=False),
                                     message.author: discord.PermissionOverwrite(read_messages=True),
-                                    channel.guild.get_member(813409812775567400): discord.PermissionOverwrite(read_messages=True)
+                                    channel.guild.get_role(813446137251102721): discord.PermissionOverwrite(read_messages=True)
                                 }
 
                                 channel = await message.guild.create_text_channel(message.author.name , overwrites=overwrites)
@@ -133,12 +133,13 @@ class MyClient(discord.Client):
                             await channel.send("**이미 테스트를 진행중입니다.**")
                     elif role.name == "중수":
                         if testMember.count(message.author.id) == 0:
-                            testMember.append(message.author.id)
                             if len(data['GrandMaster']) >= 3:
+                                testMember.append(message.author.id)
+
                                 overwrites = {
                                     channel.guild.default_role: discord.PermissionOverwrite(read_messages=False),
                                     message.author: discord.PermissionOverwrite(read_messages=True),
-                                    channel.guild.get_member(813409812775567400): discord.PermissionOverwrite(
+                                    channel.guild.get_role(813446137251102721): discord.PermissionOverwrite(
                                         read_messages=True)
                                 }
 
@@ -236,12 +237,13 @@ class MyClient(discord.Client):
                             await channel.send("**이미 테스트를 진행중입니다.**")
                     elif role.name == "초보":
                         if testMember.count(message.author.id) == 0:
-                            testMember.append(message.author.id)
                             if len(data['Master']) >= 3:
+                                testMember.append(message.author.id)
+
                                 overwrites = {
                                     channel.guild.default_role: discord.PermissionOverwrite(read_messages=False),
                                     message.author: discord.PermissionOverwrite(read_messages=True),
-                                    channel.guild.get_member(813409812775567400): discord.PermissionOverwrite(
+                                    channel.guild.get_role(813446137251102721): discord.PermissionOverwrite(
                                         read_messages=True)
                                 }
 
@@ -339,12 +341,13 @@ class MyClient(discord.Client):
                             await channel.send("**이미 테스트를 진행중입니다.**")
                     elif role.name == "뉴비":
                         if testMember.count(message.author.id) == 0:
-                            testMember.append(message.author.id)
                             if len(data['Beginner']) >= 3:
+                                testMember.append(message.author.id)
+
                                 overwrites = {
                                     channel.guild.default_role: discord.PermissionOverwrite(read_messages=False),
                                     message.author: discord.PermissionOverwrite(read_messages=True),
-                                    channel.guild.get_member(813409812775567400): discord.PermissionOverwrite(
+                                    channel.guild.get_role(813446137251102721): discord.PermissionOverwrite(
                                         read_messages=True)
                                 }
 
@@ -676,6 +679,8 @@ class MyClient(discord.Client):
                 await channel.send("**해당 유저를 페널티를 풀었습니다.**")
             else:
                 await channel.send("**언급을 한명만 해주세요.**")
+
+
 
 
 client = MyClient()
